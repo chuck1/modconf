@@ -20,6 +20,6 @@ Example
 
     conf = import_conf('module_name', 'optional module search path')
 
-`conf` is simply the module loaded using `__import__`
+``conf`` is simply the module loaded using ``__import__``
 
 
