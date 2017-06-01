@@ -10,7 +10,9 @@ setup(name='modconf',
         author='Charles Rymal',
         author_email='charlesrymal@gmail.com',
         license='MIT',
-        packages=['modconf'],
+        packages=(
+            'modconf',
+            'modconf.tests'),
         zip_safe=False,
         )
 
