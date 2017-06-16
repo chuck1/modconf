@@ -1,3 +1,5 @@
+__version__ = '0.3'
+
 import sys
 
 def import_conf(name, folder=None):
@@ -18,4 +20,6 @@ def import_class(mod_name, class_name, args, folder=None):
     cls = mod.__dict__[class_name]
     cls.prepare(*args)
     return cls
+
+
 

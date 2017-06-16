@@ -1,7 +1,9 @@
 
+import re
 from setuptools import setup
 
-version = open('VERSION.txt').read()
+with open('modconf/__init__.py') as f:
+    version = re.findall("^__version__ = '(.*)'", f.read())[0]
 
 setup(name='modconf',
         version=version,
@@ -13,6 +15,7 @@ setup(name='modconf',
         packages=(
             'modconf',
             'modconf.tests'),
+        package_data={'': ['*.txt']},
         zip_safe=False,
         )
 
