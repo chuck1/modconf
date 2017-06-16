@@ -1,11 +1,8 @@
 import unittest
 import modconf
 
-class TestFail(unittest.TestCase):
+class TestClass(unittest.TestCase):
     def test(self):
-        try:
-            modconf.import_conf('hello')
-        except:
-            pass
-
+        cls = modconf.import_class('modconf.tests.conf.conf_class', 'Conf', ('hello', 1))
+        print(cls)
 

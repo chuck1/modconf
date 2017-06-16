@@ -8,8 +8,14 @@ def import_conf(name, folder=None):
     except:
         print('modconf folder={}'.format(repr(folder)))
         raise
-
-    sys.path.pop(0)
+    finally:
+        sys.path.pop(0)
 
     return m
+
+def import_class(mod_name, class_name, args, folder=None):
+    mod = import_conf(mod_name, folder)
+    cls = mod.__dict__[class_name]
+    cls.prepare(*args)
+    return cls
 
