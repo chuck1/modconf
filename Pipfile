@@ -6,6 +6,5 @@ verify_ssl = true
 pkgtool = "*"
 
 [dev-packages]
-termcolor = "*"
-toml = "*"
 "-e ." = "*"
+
