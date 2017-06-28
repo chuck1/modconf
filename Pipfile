@@ -6,3 +6,6 @@ verify_ssl = true
 termcolor = "*"
 toml = "*"
 "-e ." = "*"
+
+[packages]
+pkgtool = "*"
