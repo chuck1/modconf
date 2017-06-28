@@ -7,4 +7,3 @@ pkgtool = "*"
 
 [dev-packages]
 "-e ." = "*"
-
