@@ -1,8 +1,7 @@
-
-ModConf
+modconf
 =======
 
-Pattern for using python modules as configuration files
+Pattern for using python modules as configuration files.
 
 Install
 -------
