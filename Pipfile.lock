@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d0e13899df9cbdf6dff4ace98413cf34fc31854c6857c2e1afa6baecbf8d9d76"
+            "sha256": "c7aafc15e6578cbef030e81400dd18c7efd0c3f82c34c366220f778dce65f7d7"
         },
         "requires": {},
         "sources": [
@@ -13,7 +13,7 @@
     },
     "default": {
         "pkgtool": {
-            "version": "==0.1b52"
+            "version": "==0.1b53"
         },
         "py": {
             "version": "==1.4.34"
