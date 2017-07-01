@@ -3,7 +3,8 @@ __version__ = '0.3.0'
 import sys
 
 def import_conf(name, folder=None):
-    sys.path.insert(0, folder)
+    if folder:
+        sys.path.insert(0, folder)
     
     try:
         m = __import__(name, fromlist='*')
@@ -11,7 +12,8 @@ def import_conf(name, folder=None):
         print('modconf folder={}'.format(repr(folder)))
         raise
     finally:
-        sys.path.pop(0)
+        if folder:
+            sys.path.pop(0)
 
     return m
 
