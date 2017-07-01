@@ -6,4 +6,4 @@ verify_ssl = true
 "-e ." = "*"
 
 [packages]
-pkgtool = "==0.1b52"
+pkgtool = "==0.1b53"
