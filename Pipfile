@@ -5,6 +5,7 @@ verify_ssl = true
 [dev-packages]
 "-e ." = "*"
 pytest = "*"
+pytest-cov = "*"
 
 [packages]
 pkgtool = "==0.1b53"
