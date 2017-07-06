@@ -17,10 +17,10 @@ def import_conf(name, folder=None):
 
     return m
 
-def import_class(mod_name, class_name, args, folder=None):
+def import_class(mod_name, class_name, args, kwargs={}, folder=None):
     mod = import_conf(mod_name, folder)
     cls = mod.__dict__[class_name]
-    cls.prepare(*args)
+    cls.prepare(*args, **kwargs)
     return cls
 
 
