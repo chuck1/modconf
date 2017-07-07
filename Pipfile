@@ -6,7 +6,3 @@ verify_ssl = true
 "-e ." = "*"
 pytest = "*"
 pytest-cov = "*"
-
-[packages]
-pkgtool = "==0.1b53"
-toml = "*"
