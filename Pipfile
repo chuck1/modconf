@@ -2,7 +2,11 @@
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 
+[packages]
+pytest-asyncio = "*"
+
 [dev-packages]
 "-e ." = "*"
 pytest = "*"
 pytest-cov = "*"
+"-e ../async-patterns" = "*"

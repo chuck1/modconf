@@ -1,5 +1,7 @@
+import functools
 
 import async_patterns
+import modconf
 
 class Request:
     def __init__(self, key, id_, args):
@@ -18,9 +20,7 @@ class Response:
     async def __call__(self, proto):
         pass
 
-async def import_class(self, loop, host, port, key, mod_name, cls_name, args):
-
-    conf = modconf.import_class('ws_controller.tests.conf.simple', 'Conf', ('DEVELOP',))
+async def import_class(loop, host, port, key, mod_name, cls_name, args, kwargs):
 
     coro = loop.create_connection(functools.partial(async_patterns.protocol.Protocol, loop), host, port)
     
@@ -29,7 +29,7 @@ async def import_class(self, loop, host, port, key, mod_name, cls_name, args):
     resp = await proto.write(modconf.remote.Request(
         key, 
         'import_class', 
-        (mod_name, cls_name, args)))
+        (mod_name, cls_name, args, kwargs)))
     
     return resp.c
 
