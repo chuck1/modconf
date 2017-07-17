@@ -4,15 +4,16 @@ python:
 - "3.6-dev"
 
 install:
-- pip3 install -r requirements.txt
+- python3 -c "import json;l = json.loads(open('Pipfile.lock').read())['default'];print('\n'.join([k+v['version']
+  for k,v in l.items()]))" > requires
+- pip3 install -r requires
 - pip3 install -e .
 - pip install pytest-cov
 - pip install codecov
-
 script:
-- pytest
-- py.test --cov=./
-
+- d=`python3 -c "import json;print(json.load(open('Setup.lock'))['name'])"`
+- echo $d
+- py.test --cov=$d
 after_success:
 - codecov
 
