@@ -1,18 +1,18 @@
 {
-    "name": "modconf",
-    "author_email": "charlesrymal@gmail.com",
-    "url": "http://github.com/chuck1/modconf",
-    "license": "MIT",
+    "scripts": [],
     "author": "Charles Rymal",
+    "name": "modconf",
+    "url": "http://github.com/chuck1/modconf",
+    "author_email": "charlesrymal@gmail.com",
+    "packages": [
+        "modconf",
+        "modconf.tests"
+    ],
     "package_data": {
         "": [
             "*.txt"
         ]
     },
     "description": "pattern for using python modules as configuration files",
-    "packages": [
-        "modconf",
-        "modconf.tests"
-    ],
-    "scripts": []
+    "license": "MIT"
 }
