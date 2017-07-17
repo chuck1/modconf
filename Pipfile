@@ -1,12 +1,11 @@
 [[source]]
-url = "https://pypi.python.org/simple"
 verify_ssl = true
-
+url = "https://pypi.python.org/simple"
 [packages]
+async-patterns = "==0.3b11"
 pytest-asyncio = "*"
-
 [dev-packages]
-"-e ." = "*"
 pytest = "*"
-pytest-cov = "*"
+"-e ." = "*"
 "-e ../async-patterns" = "*"
+pytest-cov = "*"
