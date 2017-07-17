@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b9fb64a422c0b08b14662941c5b3c915fe9bf7e45f87548647f5ce6ae0c0712f"
+            "sha256": "6f440b4318031bef2aa78c90ae4e7ad90efb36fe945874f0c5b6841706359dda"
         },
         "requires": {},
         "sources": [
@@ -11,9 +11,23 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "py": {
+            "version": "==1.4.34"
+        },
+        "pytest": {
+            "version": "==3.1.3"
+        },
+        "pytest-asyncio": {
+            "version": "==0.6.0"
+        },
+        "setuptools": {
+            "version": "==36.2.0"
+        }
+    },
     "develop": {
         "-e .": "*",
+        "-e ../async-patterns": "*",
         "coverage": {
             "version": "==4.4.1"
         },
@@ -27,7 +41,7 @@
             "version": "==2.5.1"
         },
         "setuptools": {
-            "version": "==36.0.1"
+            "version": "==36.2.0"
         }
     }
 }
