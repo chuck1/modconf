@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6f440b4318031bef2aa78c90ae4e7ad90efb36fe945874f0c5b6841706359dda"
+            "sha256": "cdf60f6a91c8e810cb1fc73689cd2085b4ccdbbeaa5eb1940e5346832f787a84"
         },
         "requires": {},
         "sources": [
@@ -12,6 +12,9 @@
         ]
     },
     "default": {
+        "async-patterns": {
+            "version": "==0.3b11"
+        },
         "py": {
             "version": "==1.4.34"
         },
