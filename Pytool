@@ -19,4 +19,7 @@ packages = [
 	'*.txt',
 ]
 
+classifiers = [
+	'Programming Language :: Python :: 3.6'
+]
 

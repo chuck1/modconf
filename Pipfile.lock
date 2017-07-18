@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cdf60f6a91c8e810cb1fc73689cd2085b4ccdbbeaa5eb1940e5346832f787a84"
+            "sha256": "735ab74b27a69bdc4fabf7430d2503eff533d01d0ca09f3a54fd3ba45e433cdd"
         },
         "requires": {},
         "sources": [
@@ -12,9 +12,6 @@
         ]
     },
     "default": {
-        "async-patterns": {
-            "version": "==0.3b11"
-        },
         "py": {
             "version": "==1.4.34"
         },
@@ -30,7 +27,6 @@
     },
     "develop": {
         "-e .": "*",
-        "-e ../async-patterns": "*",
         "coverage": {
             "version": "==4.4.1"
         },
